@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "bomblebee",
+	"version": "${version}",
+	"name": "Bomblebee",
+	"description": "A bumblebee that can be controlled like a drone and is explosive.",
+	"authors": [
+		"TheLyingCake"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bomblebee/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.backstube.bomblebee.Bomblebee"
+		],
+		"client": [
+			"net.backstube.bomblebee.BomblebeeClient"
+		]
+	},
+	"mixins": [
+		"bomblebee.mixins.json",
+		{
+			"config": "bomblebee.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
