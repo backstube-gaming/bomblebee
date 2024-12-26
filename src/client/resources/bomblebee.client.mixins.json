@@ -1,11 +1,23 @@
 {
-	"required": true,
-	"package": "net.backstube.bomblebee.mixin.client",
-	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "net.backstube.bomblebee.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BubbleColumnSoundPlayerMixin",
+    "CameraMixin",
+    "ClientPlayerEntityMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "EntityRendererMixin",
+    "GameOptionsMixin",
+    "GameRendererMixin",
+    "HeldItemRendererMixin",
+    "InGameHudMixin",
+    "MinecraftClientMixin",
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": ["BlockStateBaseMixin", "ClientConnectionMixin", "EntityMixin", "LivingEntityMixin"]
 }
